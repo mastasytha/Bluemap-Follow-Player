@@ -89,38 +89,12 @@ If the player exists in the `bm-players` marker set, the camera begins following
 
 ---
 
-## 🔐 Caching & External Calls
-
-* **Cache**: player names stored in `localStorage` for **1 hour**.
-* **API**: If name lookup fails via markers, queries:
-
-  * `https://api.minetools.eu/uuid/<undashed-uuid>`
-
----
-
-## 🔧 Configuration
-
-Change constants at the top of the script:
-
-```js
-const CACHE_KEY = "bluemapPlayerCache";
-const CACHE_TTL = 1000 * 60 * 60; // 1 hour
-```
-
----
-
 ## 🧭 URL Parameters
 
 * `?follow_player=<uuid>` — follow by UUID (dashed or undashed)
 * `?follow_player_name=<name>` — follow by player name (case-insensitive)
 
 > If both are present, UUID takes precedence.
-
----
-
-## ✅ License
-
-MIT — feel free to use, modify, and distribute. See `LICENSE` for details.
 
 ---
 
