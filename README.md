@@ -11,7 +11,6 @@ A drop‑in script that makes your BlueMap viewer automatically **follow a speci
 * **Follow by URL**: `?follow_player=<uuid>` or `?follow_player_name=<name>`
 * **Robust marker matching**: tries keys and fields; supports dashed/undashed UUIDs
 * **Name ↔ UUID resolution**: checks cache → live marker label → MineTools API
-* **Local caching**: caches name lookups in `localStorage` for 1 hour
 * **Graceful bootstrapping**: waits for the `bm-players` marker set to populate (up to 15s)
 
 ---
